@@ -1,0 +1,45 @@
+*{
+    background-color: violet;
+}
+h1.titulo-principal, p.primero{
+    color: black;
+    text-align: center;
+    opacity: 1;
+}
+img.foto{
+    height: 350px;
+    width: 300px;
+    background-image: url(img/Imagen\ de\ WhatsApp\ 2024-08-05\ a\ las\ 12.25.45_993f4f05.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.container{
+    text-align: center;
+}
+strong{
+    background-color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+div.semanas p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: large;
+}
+div.container2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+form input{
+    height: 100px;
+    width: 500px;
+}
+form button {
+    background-color: #333333;
+    color: #fff;
+    cursor: pointer;  
+}
+
+form button:hover {
+    background-color: #333;
+}
