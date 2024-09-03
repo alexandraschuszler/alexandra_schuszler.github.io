@@ -19,3 +19,33 @@ function showData(dataArray) {
 }
 
 // Escribe el código necesario para realizar el fetch al archivo con los datos y mostrar los estudiantes con la función showData
+function getJSONData(url) {
+  let res = {};
+  return fetch(url)
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw Error(response.statusText);
+      }
+    })
+    .then(function (response) {
+      res.status = 'ok';
+      res.data = response;
+      return res;
+    })
+    .catch(function (error) {
+      res.status = 'error';
+      res.data = error;
+      return res;
+    });
+}
+
+getJSONData(DATA_URL).then((res) => {
+  if (res.status === "ok") {
+    let personalData = res.data.students;
+    showData(personalData);
+  } else {
+    alert("Ha ocurrido un error");
+  }
+})
