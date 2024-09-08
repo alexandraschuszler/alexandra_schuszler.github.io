@@ -1,6 +1,12 @@
 *{
+    padding: 0px;
+    margin: 0px;
     background-color: violet;
 }
+.home{}
+    display: flex
+}
+
 h1.titulo-principal, p.primero{
     color: black;
     text-align: center;
@@ -31,8 +37,8 @@ div.container2{
     text-align: center;
 }
 form input{
-    height: 100px;
-    width: 500px;
+    height: 5rem;
+    width: 15rem;
 }
 form button {
     background-color: #333333;
